@@ -39,7 +39,7 @@ class scheduled_runonce (
         exec { 'scheduled_reboot_command':
           command => $command_string,
           user    => root,
-          onlyif  => '/usr/bin/test ! -f ${check_file}',
+          onlyif  => "/usr/bin/test ! -f ${check_file}",
           path    => ['/usr/bin','/sbin'],
         }
         notice("Reboot command will run. ${command_string}")

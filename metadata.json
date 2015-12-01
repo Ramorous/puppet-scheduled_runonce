@@ -5,7 +5,7 @@
   "dependencies": [],
   "license": "Apache-2.0",
   "name": "Ramorous-scheduled_runonce",
-  "version": "0.1.16",
+  "version": "0.1.17",
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
@@ -25,7 +25,7 @@
     },
     {"operatingsystem": "FreeBSD"}
   ],
-  "project_page": "https://forge.puppetlabs.com/Ramorous/scheduled_runonce",
+  "project_page": "https://github.com/Ramorous/puppet-scheduled_runonce",
   "issues_url": "https://github.com/Ramorous/puppet-scheduled_runonce/issues",
   "requirements": [],
   "tags": []
