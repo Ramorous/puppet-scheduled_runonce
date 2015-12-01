@@ -26,6 +26,8 @@ This module was tested and works great within RedHat Satellite 6.1.
 
 Make sure touch is within the path /usr/bin or /sbin
 
+The default command_var variable is set to "/sbin/shutdown -ra now" which will reboot your server. The intended purpose of this was originally to allow scheduled reboots, but I modified it to do more.
+
 ##Beginning with run once
 
 ```puppet
