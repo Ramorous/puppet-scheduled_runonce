@@ -1,0 +1,31 @@
+{
+  "author": "Eric B",
+  "source": "https://github.com/Ramorous/puppet-scheduled_runonce",
+  "summary": "Run a task once during a scheduled date/time.",
+  "dependencies": [],
+  "license": "Apache-2.0",
+  "name": "Ramorous-scheduled_runonce",
+  "version": "0.1.14",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": ["5","6","7"]
+    },
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": ["5","6","7"]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": ["6","7"]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": ["12","14"]
+    },
+    {"operatingsystem": "FreeBSD"}
+  ],
+  "project_page": "",
+  "requirements": [],
+  "tags": []
+}
