@@ -5,7 +5,7 @@
   "dependencies": [],
   "license": "Apache-2.0",
   "name": "Ramorous-scheduled_runonce",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
@@ -16,12 +16,32 @@
       "operatingsystemrelease": ["5","6","7"]
     },
     {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": ["5","6","7"]
+    },
+    {
+      "operatingsystem": "SLES",
+      "operatingsystemrelease": [
+        "10",
+        "10 SP1",
+        "10 SP2",
+        "10 SP3",
+        "10 SP4",
+        "11",
+        "11 SP1",
+        "11 SP2",
+        "11 SP3",
+        "11 SP4",
+        "12"
+      ]
+    },
+    {
       "operatingsystem": "Debian",
       "operatingsystemrelease": ["6","7"]
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": ["12","14"]
+      "operatingsystemrelease": ["12","14","15"]
     },
     {"operatingsystem": "FreeBSD"}
   ],
