@@ -35,7 +35,7 @@ class scheduled_runonce (
       # Check if Date/Time is within allowed period
       if $dt_start <= $dt_current and $dt_end >= $dt_current {
         # Prep Command that is to be run
-        $command_string = "touch ${check_file};${command_var}"
+        $command_string = "/bin/touch ${check_file};${command_var}"
         exec { 'scheduled_reboot_command':
           command => $command_string,
           user    => root,
