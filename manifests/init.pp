@@ -40,7 +40,7 @@ class scheduled_runonce (
           command => $command_string,
           user    => root,
           onlyif  => "/usr/bin/test ! -f ${check_file}",
-          path    => ['/usr/bin','/sbin'],
+          path    => ['/usr/bin','/sbin','/bin'],
         }
         notice("Reboot command will run. ${command_string}")
       } else {
