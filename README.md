@@ -37,6 +37,7 @@ The default command_var variable is set to "/sbin/shutdown -ra now" which will r
       "datetime_end" => "2012-06-12 12:53:59",
       "command_var" => "/sbin/shutdown -ra now",
       "check_file" => "/tmp/pp.sched_runonce",
+	  "task_timeout" => 0,
     }
 ```
 
@@ -50,10 +51,12 @@ The default command_var variable is set to "/sbin/shutdown -ra now" which will r
     - Command to execute
     check_file     (String: default [/tmp/pp.scheduled-reboot])
     - The check file that is created with Start DateTime added to the end.
+    task_timeout   (Integer: default [0])
+    - 0 has no timeout, X timeout in seconds
 
 ##License
 
-Copyright 2015 Eric B
+Copyright 2015-2016 Eric B
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 

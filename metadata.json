@@ -5,7 +5,7 @@
   "dependencies": [],
   "license": "Apache-2.0",
   "name": "Ramorous-scheduled_runonce",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "operatingsystem_support": [
     {
       "operatingsystem": "RedHat",
