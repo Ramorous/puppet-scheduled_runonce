@@ -14,6 +14,8 @@
 #     - Command to execute
 #   check_file     (String: default [/tmp/pp.scheduled-reboot])
 #     - The check file that is created with Start DateTime added to the end.
+#   task_timeout   (Integer: default [0])
+#     - 0 has no timeout, X timeout in seconds
 #
 class scheduled_runonce (
   $class_enabled     = true,
@@ -21,6 +23,7 @@ class scheduled_runonce (
   $datetime_end      = '2012-06-10 12:53:59',
   $command_var       = '/sbin/shutdown -ra now',
   $check_file_prefix = '/tmp/pp.scheduled-runonce',
+  $task_timeout      = 0,
 ) {
   # Verify if target host is Linux
   if $::kernel == 'Linux' {
@@ -41,6 +44,7 @@ class scheduled_runonce (
           user    => root,
           onlyif  => "/usr/bin/test ! -f ${check_file}",
           path    => ['/usr/bin','/sbin','/bin'],
+          timeout => $task_timeout,
         }
         notice("Reboot command will run. ${command_string}")
       } else {
